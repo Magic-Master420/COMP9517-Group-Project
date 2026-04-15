@@ -1,3 +1,4 @@
 .DS_Store
 /cm/data
 cm/~$training_results_history.xlsx
+cm/best_deeplabv3_aug_brightness.pth
