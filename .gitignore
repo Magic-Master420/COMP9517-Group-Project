@@ -2,3 +2,5 @@
 /cm/data
 cm/~$training_results_history.xlsx
 cm/best_deeplabv3_aug_brightness.pth
+/dl/cm/data
+dl/cm/best_deeplabv3_aug_brightness.pth
