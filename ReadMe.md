@@ -58,5 +58,7 @@ To run this code, place the dataset folder (renamed as data/) in the same direct
 ### External code / resources used
 
 ### Running the Code
+This implementation was done on Google colab while using their existing libraries. For the best training and result experience is it recommended that you run the notebook on the Google Colab workspace.
 
+To run this notebook on Google Colab, upload your desired file to Google Drive, then right click on the uploaded file to open with Google Colab. This will open Google Colab's workspace environment where you can then run the notebook. It is recommonded that you use one of Google's available GPU's for the best experience.
 
