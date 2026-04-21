@@ -1,7 +1,5 @@
 # Info
 
-
-
 ## DeepLabV3 Method - Chris Morris
 Within the /dl/cm/ folder is my deep learning method for wheat segmentation using DeepLabV3 in PyTorch. The goal of this part was to train a semantic segmentation model that can predict a binary mask for each image, separating wheat pixels from background pixels.
 
@@ -41,3 +39,24 @@ The submitted code mainly contains my own implementation and modifications built
 
 ### Running the Code
 To run this code, place the dataset folder (renamed as data/) in the same directory as the notebook and make sure the Excel results file is stored in the home project directory (as this is expected by the code). After that, open the notebook and run it from top to bottom so that the dataset paths, model setup, training settings, and result-saving steps are all loaded in the correct order. This will allow the code to train or fine-tune the model, evaluate it, and then save the updated results back to the Excel file correctly.
+
+## U-Net Method - Ganes Ngim
+
+
+### Files
+| File / Folder                                    | Description                                                                                                                      |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| `unet_data_augmentation.ipynb`                   | Final notebook containing best parameter changes and data augmentation.                                                          |
+| `unet_implementation.ipynb`                      | Base implemenation of U-Net, used as a reference point for future tuning and augmentation.                                       |
+| `unet_parameter_tuning.ipynb`                    | The first parameter tuning after the base implementation. Only fine tuned basic parameters like the lr, number of epochs and image size. |
+| `unet_parameter_tuning2.ipynb`                   | The second notebook containing notable parameter changes like different encoders and weights, loss function and optimizers.      |
+| `training_results_history.xlsx`                  | Contains training result logs of parameter changes and data augmentation implemenation for comparison.                           |
+
+### Main libraries used
+
+
+### External code / resources used
+
+### Running the Code
+
+
