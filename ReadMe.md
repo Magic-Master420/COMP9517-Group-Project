@@ -41,7 +41,7 @@ The submitted code mainly contains my own implementation and modifications built
 To run this code, place the dataset folder (renamed as data/) in the same directory as the notebook and make sure the Excel results file is stored in the home project directory (as this is expected by the code). After that, open the notebook and run it from top to bottom so that the dataset paths, model setup, training settings, and result-saving steps are all loaded in the correct order. This will allow the code to train or fine-tune the model, evaluate it, and then save the updated results back to the Excel file correctly.
 
 ## U-Net Method - Ganes Ngim
-This side of the project attempts to conduct image segmentation on wheat using the U-Net CNN architecture. The model uses ResNet50 encoder pretrained on ImageNet, allowing it to benefit from learned low-level and mid-level visual features such as edges, textures, and shapes. There has been extensive testing and experimentation with various parameters to find the best outcome, and some of these changes and results can be seen in the excel file within the corresponding U-Net directory. The notebooks also checks and exits the training loop if there hasn't been a reduction in validation loss over a certain number of period. This ensures that the model is not over-fitted and produces the best results during testing.
+This side of the project attempts to conduct image segmentation on wheat using the U-Net CNN architecture. The model uses ResNet50 encoder pretrained on ImageNet, allowing it to benefit from learned low-level and mid-level visual features such as edges, textures, and shapes. There has been extensive testing and experimentation with various parameters to find the best outcome, and some of these changes and results can be seen in the excel file within the corresponding U-Net directory. The notebooks also checks and exits the training loop if there hasn't been a reduction in validation loss over a certain number of epochs. This ensures that the model is not over-fitted and produces the best results during testing.
 
 The associated files for this implementation is in the /dl/gn directory.
 
@@ -55,7 +55,14 @@ The associated files for this implementation is in the /dl/gn directory.
 | `training_results_history.xlsx`                  | Contains training result logs of parameter changes and data augmentation implemenation for comparison.                           |
 
 ### Main libraries used
-
+- PyTorch — main deep learning framework used for model training and testing
+- Segmentation Models Pytorch  — used for the U-Net model, pretrained weights, transforms, and image utilities
+- NumPy — used for array handling and numerical operations
+- Matplotlib — used for graphs and result visualisation
+- cv2_imshow — alternative to cv2's imshow to resolve issues with displaying images on Google Colab
+- albumentations — used for image and mask augmentation 
+- pandas — used for saving and reviewing experiment results in Excel format
+- openpyxl — used for writing Excel result files
 
 ### External code / resources used
 
