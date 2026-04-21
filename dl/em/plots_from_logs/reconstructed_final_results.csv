@@ -1,0 +1,5 @@
+run_name,test_precision,test_recall,test_f1,test_iou,test_accuracy,test_loss,train_time_s,test_time_s
+em_segformer_baseline,0.9674,0.9634,0.9654,0.9331,0.9535,0.1235,2533.47,22.42
+em_segformer_finetune,0.9656,0.973,0.9693,0.9405,0.9586,0.1107,6413.46,27.35
+em_segformer_augmentation,0.964,0.9727,0.9683,0.9386,0.9572,0.1133,6648.76,28.9
+em_segformer_best_checkpoint,0.9714,0.9658,0.9685,0.939,0.9578,0.112,9982.1,28.29
