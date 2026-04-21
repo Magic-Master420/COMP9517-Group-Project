@@ -68,6 +68,7 @@ The associated files for this implementation is in the /dl/gn directory.
 - segmentation_models_pytorch documentation — used for implementing the U-Net architecture with a pretrained ResNet50 encoder and segmentation-specific loss functions
 - Albumentations documentation/examples — used to design the augmentation pipeline for training images and masks
 - Google Colab documentation — used for Colab-specific notebook utilities and image display support
+
 Note: The base U-Net implementation was originaly branched off from Chris Morris's base implementation then modified to fit the U-Net architecture. Hence the similarity in style.
 
 ### Running the Code
