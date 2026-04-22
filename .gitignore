@@ -4,3 +4,9 @@ cm/~$training_results_history.xlsx
 cm/best_deeplabv3_aug_brightness.pth
 /dl/cm/data
 dl/cm/best_deeplabv3_aug_brightness.pth
+/dl/cm/EWS-Dataset
+/dl/cm/COMP9517-Group-Project
+dl/cm/github_token.txt
+dl/cm/method_random_forest.ipynb
+dl/cm/training_results_history_1.xlsx
+/ml/EWS-Dataset
