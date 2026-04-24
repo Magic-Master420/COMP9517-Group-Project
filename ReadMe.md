@@ -40,6 +40,8 @@ The submitted code mainly contains my own implementation and modifications built
 ### Running the Code
 To run this code, place the dataset folder (renamed as data/) in the same directory as the notebook and make sure the Excel results file is stored in the home project directory (as this is expected by the code). After that, open the notebook and run it from top to bottom so that the dataset paths, model setup, training settings, and result-saving steps are all loaded in the correct order. This will allow the code to train or fine-tune the model, evaluate it, and then save the updated results back to the Excel file correctly.
 
+---
+
 ## U-Net Method - Ganes Ngim
 This side of the project attempts to conduct image segmentation on wheat using the U-Net CNN architecture. The model uses ResNet50 encoder pretrained on ImageNet, allowing it to benefit from learned low-level and mid-level visual features such as edges, textures, and shapes. There has been extensive testing and experimentation with various parameters to find the best outcome, and some of these changes and results can be seen in the excel file within the corresponding U-Net directory. The notebooks also checks and exits the training loop if there hasn't been a reduction in validation loss over a certain number of epochs. This ensures that the model is not over-fitted and produces the best results during testing.
 
@@ -76,3 +78,56 @@ This implementation was done on Google colab while using their existing librarie
 
 To run this notebook on Google Colab, upload your desired file to Google Drive, then right click on the uploaded file to open with Google Colab. This will open Google Colab's workspace environment where you can then run the notebook. It is recommonded that you use one of Google's available GPU's for a faster run time.
 
+---
+
+## Transformer Method - Ethan McEwan
+
+Within the `/dl/em/` folder is the Transformer-based wheat segmentation method.
+
+### Files
+
+| File / Folder | Description |
+|---|---|
+| `transformer.ipynb` | Main notebook for the Transformer-based segmentation method. |
+| `em_experiment_summary.csv` | Summary of experiment results. |
+| `training_results_history.xlsx` | Excel file containing logged results from the Transformer experiments. |
+
+### Running the Code
+
+Open `transformer.ipynb` and run it from top to bottom. Make sure the dataset is in the location expected by the notebook and keep the results files in the same directory so the outputs can be saved correctly.
+
+---
+
+## Random Forest and KNN Methods - Bishoy Michail
+
+Within the `/ml/bm/` folder are the Random Forest and KNN wheat segmentation methods.
+
+### Files
+
+| File / Folder | Description |
+|---|---|
+| `random_forest_implementation.ipynb` | Main notebook for the Random Forest method. |
+| `knn_implementation.ipynb` | Main notebook for the KNN method. |
+| `method_random_forest.ipynb` | Additional Random Forest notebook used during development. |
+| `training_results_history.xlsx` | Excel file containing logged results for these experiments. |
+
+### Running the Code
+
+Open the notebook for the method you want to run and execute it from top to bottom. Make sure the dataset is in the expected location and keep `training_results_history.xlsx` in the same folder so results can be saved properly.
+
+---
+
+## SVM Method - Matthew Morris
+
+Within the `/ml/MM/` folder is the SVM wheat segmentation method.
+
+### Files
+
+| File / Folder | Description |
+|---|---|
+| `SVM_implementation.ipynb` | Main notebook for the SVM method. |
+| `training_results_history.xlsx` | Excel file containing logged results for the SVM experiments. |
+
+### Running the Code
+
+Open `SVM_implementation.ipynb` and run it from top to bottom. Make sure the dataset is in the expected location and keep the results file in the same folder so outputs can be saved correctly.
